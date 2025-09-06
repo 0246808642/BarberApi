@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarberApi", "BarberApi\BarberApi.csproj", "{E47B29A0-D93E-4BB6-B0C6-F2CC8916E55E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E47B29A0-D93E-4BB6-B0C6-F2CC8916E55E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E47B29A0-D93E-4BB6-B0C6-F2CC8916E55E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E47B29A0-D93E-4BB6-B0C6-F2CC8916E55E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E47B29A0-D93E-4BB6-B0C6-F2CC8916E55E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BAFAC5AF-0285-4B9F-AB22-8592290F39EE}
+	EndGlobalSection
+EndGlobal
