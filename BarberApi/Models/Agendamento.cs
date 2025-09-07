@@ -18,12 +18,10 @@ namespace BarberApi.Models
         public int Status { get; set; }
 
         [Required]
-        public int ClientId { get; set; }
+        public long ClientId { get; set; }
 
         [ForeignKey("ClientId")]
         public Cliente Cliente { get; set; }
-        
-        [Required]
         public virtual ICollection<Servico> Servicios { get; set; }
         public DateTime DataCriacao { get; set; } = DateTime.Now;
     }

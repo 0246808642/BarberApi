@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace BarberApi.Service
+namespace BarberApi.Service.Validacoes
 {
     public static class ValidationHelper
     {

@@ -1,4 +1,4 @@
-﻿using BarberApi.Service;
+﻿using BarberApi.Service.Validacoes;
 using System.ComponentModel.DataAnnotations;
 
 namespace BarberApi.Data.Dtos.AgendamentoDto
