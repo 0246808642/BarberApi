@@ -1,11 +1,13 @@
 ﻿using BarberApi.Data.Dtos.AgendamentoDto;
 using BarberApi.Service.Agendamento;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 
 namespace BarberApi.Controllers;
 
 [ApiController]
+[Authorize]
 [Route("[controller]")]
 public class AgendamentosController : ControllerBase
 {

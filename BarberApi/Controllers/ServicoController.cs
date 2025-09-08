@@ -1,10 +1,12 @@
 ﻿using BarberApi.Data.Dtos.ServicoDto;
 using BarberApi.Service.Servico;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BarberApi.Controllers;
 
 [ApiController]
+[Authorize]
 [Route("[controller]")]
 public class ServicoController : ControllerBase
 {

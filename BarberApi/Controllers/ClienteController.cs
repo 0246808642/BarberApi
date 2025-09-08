@@ -1,11 +1,14 @@
 ﻿using BarberApi.Data.Dtos.ClienteDto;
 using BarberApi.Service.Cliente;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BarberApi.Controllers
 {
     [ApiController]
+    [Authorize]
     [Route("[controller]")]
+    
     public class ClienteController: ControllerBase
     {
         private readonly ICliente _service;
