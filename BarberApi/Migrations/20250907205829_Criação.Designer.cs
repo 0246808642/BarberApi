@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace BarberApi.Migrations
 {
-    [DbContext(typeof(appDbContext))]
+    [DbContext(typeof(AppDbContext))]
     [Migration("20250907205829_Criação")]
     partial class Criação
     {

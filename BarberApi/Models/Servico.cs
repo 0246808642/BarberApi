@@ -20,6 +20,6 @@ namespace BarberApi.Models
 
         [Required]
         [Column(TypeName = "decimal(10,2)")]
-        public double Preco { get; set; }
+        public decimal Preco { get; set; }
     }
 }

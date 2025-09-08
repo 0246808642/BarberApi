@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BarberApi.Data
 {
-    public class appDbContext : DbContext
+    public class AppDbContext : DbContext
     {
-        public appDbContext(DbContextOptions<appDbContext> options) : base(options)
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
         }
 

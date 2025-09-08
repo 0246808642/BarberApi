@@ -6,7 +6,7 @@ namespace BarberApi.Data.Dtos.AgendamentoDto
     public class UpdateAgendamentoDto
     {
         [Required]
-        public int ClientId { get; set; }
+        public long ClientId { get; set; }
 
         [Required(ErrorMessage = "Data e hora são obrigatórias")]
         [DataType(DataType.DateTime)]

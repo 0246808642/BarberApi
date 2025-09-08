@@ -10,6 +10,5 @@ namespace BarberApi.Data.Dtos.ClienteDto
         public string Telefone { get; set; }
         public string Email { get; set; }
         public DateTime DataNascimento { get; set; }
-        public DateTime HoraCriacao { get; set; } = DateTime.Now;
     }
 }

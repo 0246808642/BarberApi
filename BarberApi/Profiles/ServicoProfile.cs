@@ -9,8 +9,11 @@ namespace BarberApi.Profiles
         public ServicoProfile()
         {
             CreateMap<Servico, ReadServicoDto>();
-            CreateMap<CreateServicoDto, Servico>();
-            CreateMap<UpdateServicoDto, Servico>();
+            CreateMap<CreateServicoDto, Servico>()
+                  .ForMember(dest => dest.Id, opt => opt.Ignore()); 
+
+            CreateMap<UpdateServicoDto, Servico>()
+                .ForMember(dest => dest.Id, opt => opt.Ignore()); 
         }
     }
 }

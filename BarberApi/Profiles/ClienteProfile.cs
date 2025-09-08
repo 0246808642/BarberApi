@@ -9,9 +9,18 @@ namespace BarberApi.Profiles
     {
         public ClienteProfile()
         {
-            CreateMap<Cliente, ReadClienteDto>();
-            CreateMap<CreateClienteDto, Cliente>();
-            CreateMap<UpdateClienteDto, Cliente>();
+            CreateMap<CreateClienteDto, Cliente>()
+               .ForMember(dest => dest.ClientId, opt => opt.Ignore())
+               .ForMember(dest => dest.DataCriacao, opt => opt.MapFrom(src => DateTime.Now))
+               .ForMember(dest => dest.DataNascimento, opt => opt.MapFrom(src => src.DataNascimento));
+
+            CreateMap<Cliente, ReadClienteDto>()
+                .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.ClientId));
+
+            CreateMap<UpdateClienteDto, Cliente>()
+                .ForMember(dest => dest.ClientId, opt => opt.Ignore())
+                .ForMember(dest => dest.DataCriacao, opt => opt.Ignore());
+
         }
     }
 }

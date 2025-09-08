@@ -1,12 +1,18 @@
 using BarberApi.Data;
+using BarberApi.Service.Agendamento;
+using BarberApi.Service.Cliente;
+using BarberApi.Service.Servico;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddDbContext<appDbContext>(op => op.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddDbContext<AppDbContext>(op => op.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddControllers();
+builder.Services.AddScoped<IAgendamento, AgendamentoService>();
+builder.Services.AddScoped<ICliente, ClienteService>();
+builder.Services.AddScoped<IServico, ServicoService>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
