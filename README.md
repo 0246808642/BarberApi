@@ -1,4 +1,5 @@
 ✂️ Descrição
+
 💈 Barber API é uma API desenvolvida para gerenciar os processos de uma barbearia, incluindo clientes, serviços e agendamentos, com autenticação de usuários e boas práticas de desenvolvimento.
 ⚙️ Ela foi construída com .NET 8, Entity Framework Core e .NET Identity, garantindo segurança, escalabilidade e manutenção facilitada.
 
