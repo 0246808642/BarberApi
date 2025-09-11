@@ -1,12 +1,17 @@
-﻿using BarberApi.Service.Validacoes;
+﻿using BarberApi.Models.Enums;
+using BarberApi.Service.Validacoes;
 using System.ComponentModel.DataAnnotations;
 
 namespace BarberApi.Data.Dtos.AgendamentoDto
 {
     public class CreateAgendamentoDto
     {
-        [Required]
+        [Required(ErrorMessage = "ClientId é obrigatório")]
         public long ClientId { get; set; }
+
+        [Required(ErrorMessage = "Serviço é obrigatório")]
+        [Range(1, 20, ErrorMessage = "Escolha um serviço válido.")]
+        public ServicosEnum NomeServico { get; set; }
 
         [Required(ErrorMessage = "Data e hora são obrigatórias")]
         [DataType(DataType.DateTime)]

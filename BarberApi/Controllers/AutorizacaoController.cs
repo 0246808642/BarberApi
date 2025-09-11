@@ -7,11 +7,11 @@ namespace BarberApi.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class AuthorizaController : ControllerBase
+    public class AutorizacaoController : ControllerBase
     {
         private readonly IUser _userService; // Use a INTERFACE, não a classe direta
 
-        public AuthorizaController(IUser userService)
+        public AutorizacaoController(IUser userService)
         {
             _userService = userService;
         }
